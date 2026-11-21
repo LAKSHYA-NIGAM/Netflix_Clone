@@ -18,6 +18,8 @@ A responsive, high-fidelity Netflix streaming interface built with **React 18**,
 - **Interactive Video Modal**: Custom HTML5 video player component with play/pause and fullscreen controls.
 - **Authentication Context**: Client-side authentication modal managing user profile and custom watchlists.
 - **Responsive Layout**: Tailored viewports optimized for mobile, tablet, and desktop screens.
+- **Video Playback State Manager (`src/utils/playerState.ts`):** Calculates watch completion percentages, enforces sanitized playback rate bounds (0.5x to 2.0x), and tracks "Continue Watching" candidate qualification (3% to 92% thresholds).
+- **Watchlist & Bookmark Store (`src/utils/watchlistStore.ts`):** In-memory and persistent user watchlist manager with O(1) deduplication, genre filtering, and rating-based sorting.
 
 ---
 

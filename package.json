@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "node --experimental-strip-types tests/catalog.test.js"
+    "test": "node --test --experimental-strip-types tests/catalog.test.js tests/playerState.test.js tests/watchlistStore.test.js"
   },
   "dependencies": {
     "lucide-react": "^0.344.0",

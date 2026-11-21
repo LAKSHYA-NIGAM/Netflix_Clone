@@ -1,4 +1,4 @@
-import { Movie, Genre } from '../types';
+import type { Movie, Genre } from '../types/index.ts';
 
 export const genres: Genre[] = [
   { id: 28, name: 'Action' },

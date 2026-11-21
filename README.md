@@ -1,52 +1,78 @@
-# 🎬 Netflix_Clone
+# 🎬 Netflix Clone — Streaming UI Platform
 
-A responsive and interactive Netflix Clone built using **React + TypeScript + Tailwind CSS**, with features like movie listings, modals, video previews, and authentication logic.
+[![CI](https://github.com/LAKSHYA-NIGAM/Netflix_Clone/actions/workflows/ci.yml/badge.svg)](https://github.com/LAKSHYA-NIGAM/Netflix_Clone/actions/workflows/ci.yml)
+[![React 18](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 
-## 🚀 Live Demo
+A responsive, high-fidelity Netflix streaming interface built with **React 18**, **TypeScript**, **Vite**, and **Tailwind CSS**. Features dynamic movie rows, genre filtering, video preview modals, authentication state management, and real-time catalog search.
 
-> Coming soon — deploy on [Vercel](https://vercel.com/) or [Netlify](https://netlify.com/) and paste the link here.
+---
 
 ## 📌 Features
 
-- 🔍 Search Functionality
-- 🎞️ Hero Banner with featured movie
-- 🧩 Modular React Components
-- 🎬 Video Player with preview
-- 🔐 Auth Modal using Context API
-- 🌀 Loading Spinner
-- 📱 Fully Responsive
+- **Dynamic Catalog Rows**: Categorized streaming collections across Trending, Drama, Crime, Sci-Fi, and Thriller genres.
+- **Hero Featured Showcase**: Cinematic billboard hero with autoplay preview and detailed metadata.
+- **Real-Time Search**: Substring and keyword search across movie titles and plot descriptions.
+- **Interactive Video Modal**: Custom HTML5 video player component with play/pause and fullscreen controls.
+- **Authentication Context**: Client-side authentication modal managing user profile and custom watchlists.
+- **Responsive Layout**: Tailored viewports optimized for mobile, tablet, and desktop screens.
+
+---
 
 ## 🛠 Tech Stack
 
-- React + Vite + TypeScript
-- Tailwind CSS
-- Context API
-- ESLint, Prettier
+- **Framework**: React 18 with Vite
+- **Language**: TypeScript 5.5
+- **Styling**: Tailwind CSS, PostCSS, Autoprefixer
+- **Icons**: Lucide React
+- **Routing & State**: React Context API, React Router DOM
+
+---
 
 ## 📦 Getting Started
+
+### 1. Clone & Install
 
 ```bash
 git clone https://github.com/LAKSHYA-NIGAM/Netflix_Clone.git
 cd Netflix_Clone
 npm install
+```
+
+### 2. Development Server
+
+```bash
 npm run dev
-🌐 Deployment
-Deploy easily with:
+```
 
-Vercel
+### 3. Production Build
 
-Netlify
+```bash
+npm run build
+```
 
-🙋‍♂️ Author
-Lakshya Nigam
-📍 BTech CSE | 2nd Year
-🔗 GitHub
-🔗 LinkedIn
+---
 
-yaml
-Copy
-Edit
+## 🧪 Automated Testing
 
-</details>
+The project includes an automated test suite verifying catalog schema integrity, genre mapping, and search query filters:
 
-5. Scroll down and click ✅ **"Commit new file"**
+```bash
+# Run automated catalog test suite
+npm test
+```
+
+### Test Coverage:
+- **Genre Definitions**: Verifies 18 distinct standard genre IDs and non-empty category names.
+- **Movie Catalog Integrity**: Asserts required metadata fields, rating bounds (0-10), and poster URLs.
+- **Genre Categorization**: Validates genre filtering across Trending, Drama, Crime, Sci-Fi, and Thriller collections.
+- **Search Logic**: Tests title and synopsis keyword filtering for exact and substring matches.
+
+---
+
+## 🙋‍♂️ Author
+
+**Lakshya Nigam**  
+GitHub: [@LAKSHYA-NIGAM](https://github.com/LAKSHYA-NIGAM)
